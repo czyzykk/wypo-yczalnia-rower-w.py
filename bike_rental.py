@@ -90,7 +90,7 @@ def main():
     
             except ValueError:
                 print("Niepoprawny format. Użyj formatu HH:MM. Spróbuj ponownie.")
-        mail = str(input("Podaj adres email (przykład: jankowalski@gmail.com): "))
+        mail = str(input("Podaj adres email (przykład: jakubczyzyk@gmail.com): "))
         rental = rent_bike(name, time_input)
         print (rental)
 
