@@ -1,4 +1,4 @@
-mport json
+import json
 from datetime import datetime
 import smtplib
 import os
@@ -10,7 +10,7 @@ def rent_bike(customer_name, rental_duration):
     "A function that takes the customer's name and rental time"
     cost = calculate_cost(rental_duration)
     rental = {
-            "Imie:": name_of_the_customer,
+            "Imie:": customer_name,
             "Czas:": rental_duration, 
             "Koszt:": cost
             }
@@ -61,7 +61,7 @@ def main():
            4. Usuwanie wynajmu z listy
     """)
     choice = int(input())
-    while not 1 <= choice <= 4
+    while not 1 <= choice <= 4:
         print ("Wybierz opcje od 1 do 4")
         choice = int(input())
     if choice == 1:
